@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/img/icon.svg">
+  <link rel="icon" type="image/png" href="/img/logo.png">
+  <title>GO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div>
+        <img src="./img/logo.svg" alt="Логотип">
+        <h3>Меню</h3>
+        <nav>
+          <ul>
+            <li><a href="#hall">Залы</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#invite">Бронь</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section>
+        <h2>У нас есть всё для классного отдыха с друзьями</h2>
+        <ul>
+          <li>
+            <figure>
+              <img src="img/vr.jpg" alt="Vr очки">
+              <figcaption>Vr очки</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/audio.jpg" alt="Аудио-система 5.1 с отличным звуком">
+              <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/micro.jpg" alt="Караоке (4 микрофона)">
+              <figcaption>Караоке (4 микрофона)</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/game.jpg" alt="Настольные игры">
+              <figcaption>Настольные игры</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/netflix.jpg" alt="Кино сервис Netflix,IVI,MegoGo,КиноПоиск,Okko">
+              <figcaption>Кино сервис Netflix,IVI,MegoGo,КиноПоиск,Okko</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/sony.jpg" alt="PlayStation 5">
+              <figcaption>PlayStation 5</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section id="hall">
+        <h2>Наши залы</h2>
+        <ol>
+          <li><a href="vibes.html" target="_blank">80's vibes</a></li>
+          <li><a href="starwars.html" target="_blank">Star wars</a></li>
+          <li><a href="wildwest.html" target="_blank">Wild west</a></li>
+          <li><a href="neon.html" target="_blank">Neon style</a></li>
+        </ol>
+      </section>
+
+      <form id="invite" action="https://jsonplaceholder.typicode.com/posts" method="POST" style="max-width: 600px;">
+        <fieldset>
+          <h2>Забронировать зал просто</h2>
+
+          <fieldset>
+            <legend>Выберите зал</legend>
+            <input type="radio" name="gym" value="80_vibes">80's vibes
+            <input type="radio" name="gym" value="star_wars">start wars
+            <input type="radio" name="gym" value="wild_west">wild west
+            <input type="radio" name="gym" value="neon_style">neon style
+          </fieldset>
+
+          <fieldset>
+            <legend>Собери набор развелечений</legend>
+            <fieldset>
+              <legend>Приставки:</legend>
+              <label><input type="radio" name="console" value="play_station">Play Station</label>
+              <label><input type="radio" name="console" value="sega_mega_drive">Sega Mega Drive</label>
+              <label><input type="radio" name="console" value="x_box_one_s">X-box One S</label>
+              <label><input type="radio" name="console" value="dendy">Dendy</label>
+            </fieldset>
+            <fieldset>
+              <legend>Настольный игры:</legend>
+              <label><input type="checkbox" name="table_game" value="jenga">Jenga</label>
+              <label><input type="checkbox" name="table_game" value="monopoly">Monopoly</label>
+              <label><input type="checkbox" name="table_game" value="machkin">Мачкин</label>
+              <label><input type="checkbox" name="table_game" value="alias">Alias</label>
+            </fieldset>
+            <fieldset>
+              <legend>Дополнительно:</legend>
+              <label><input type="checkbox" name="dop_game" value="microphone">Караоке</label>
+              <label><input type="checkbox" name="dop_game" value="vr">VR</label>
+            </fieldset>
+          </fieldset>
+
+          <fieldset>
+            <legend>Выбери дату и время</legend>
+            <fieldset>
+              <fieldset>
+                <label>
+                  <input type="date" name="data" placeholder="Дата" required>
+                </label>
+                <label>
+                  <input type="time" name="time" placeholder="Время" required>
+                </label>
+              </fieldset>
+              <fieldset>
+                <label>
+                  <input type="number" name="person" placeholder="Сколько человек" required>
+                </label>
+              </fieldset>
+            </fieldset>
+
+            <fieldset>
+              <label>
+                Имя*
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                Фамилия*
+                <input type="text" name="sername" required>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label>
+                Телефона
+                <input type="tel" name="tel" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+            </fieldset>
+          </fieldset>
+          <button type="submit" formtarget="_blank">Забронировать</button>
+        </fieldset>
+      </form>
+
+      <section id="about">
+        <h2>О нас</h2>
+        <article>
+          <p>Для наших гостей мы создали <i> концептуально новое игровое пространство виртуальной реальности </i> в
+            центральной части города.</p>
+          <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+            разработками со всего мира.</p>
+        </article>
+        <article>
+          <blockquote>
+            <p class="blockquote"> <b> GAME OVER </b> - это место незабываемых впечатлений</p>
+            <cite>Аркадий Адакшин, создатель игровой территории GAME OVER</cite>
+          </blockquote>
+        </article>
+      </section>
+
+      <section id="reviews" class="feedback">
+        <h2>Отзывы поситителей</h2>
+        <div>
+          <div>
+            <figure>
+              <img src="#" alt="Макс Самойлов">
+              <figcaption>Макс Самойлов</figcaption>
+            </figure>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ducimus?
+          </p>
+        </div>
+        <div>
+          <div>
+            <figure>
+              <img src="#" alt="Макс Самойлов">
+              <figcaption>Макс Самойлов</figcaption>
+            </figure>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ducimus?
+          </p>
+        </div>
+        <div>
+          <div>
+            <figure>
+              <img src="#" alt="Макс Самойлов">
+              <figcaption>Макс Самойлов</figcaption>
+            </figure>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ducimus?
+          </p>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <h2>Контакты</h2>
+        <p>г.Москва ул.Аквамарин,16</p>
+        <p>
+          <a href="tel:89509302893">8(950)930-28-93</a>
+        </p>
+        <p>
+          <a href="mailto:GameOver@gmail.ru">GameOver@gmail.ru</a>
+        </p>
+        <ul>
+          <li><a href="https://vk.com/" target="_blank">Vkontakte</a></li>
+          <li><a href="https://web.telegram.org/" target="_blank">Telegram</a></li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</body>
+
+</html>
