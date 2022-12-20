@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B1A1B;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 130px;
+  margin: 0 auto;
+}
+
+section:not(:last-child) {
+  margin: 100px 0;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blockquote {
+  text-transform: uppercase;
+}

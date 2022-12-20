@@ -1,0 +1,74 @@
+.about-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+
+}
+
+.about-blockquote {
+  position: relative;
+}
+
+.about-text-wrapper {
+  margin-bottom: 70px;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.about-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about-blockquote-text {
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.about-blockquote-wrapper {
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about-blockquote-wrapper::before,::after {
+  font-size: 44px;
+  font-weight: 700;
+  color: #6C0287;
+  position: absolute;
+}
+
+.about-blockquote-wrapper::before {
+  content: "“";
+  left: 0;
+}
+
+.about-blockquote-wrapper::after {
+  content: "”";
+  right: 95px;
+  bottom: 0;
+}
+
+.about-blockquote-city-wrapper {
+  width: 275px;
+  margin-left: auto;
+}
+
+.about-blockquote-city {
+  position: relative;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about-blockquote-city::before {
+  content: "";
+  background-image: url("/img/jpg/people.jpg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: -110px;
+  top: 0;
+  border-radius: 50%;
+}
