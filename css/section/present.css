@@ -1,11 +1,11 @@
 .present {
-  margin: 146px 0 100px 0;
-  height: 825px;
+  padding-top: 145px;
 }
 
 .present__container {
   position: relative;
   z-index: 1;
+  height: 825px;
 }
 
 .present__container::after {
@@ -14,7 +14,7 @@
   height: 762px;
   position: absolute;
   right: 130px;
-  top: 60px;
+  top: 65px;
   background-image: url('/img/jpg/header.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@
 }
 
 .present__subtitle {
-  margin-left: 100px;
+  padding-left: 100px;
   font-size: 28px;
   line-height: 50px;
 }

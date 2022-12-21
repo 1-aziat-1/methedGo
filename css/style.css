@@ -4,7 +4,7 @@
 @import '/css/section/hall.css';
 @import '/css/section/about.css';
 @import '/css/section/faq.css';
-@import '/css/section/contacts.css';
+@import '/css/footer.css';
 
 html {
   position: relative;
@@ -62,20 +62,27 @@ iframe {
   border: none;
 }
 
+section:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+section:not(:first-child) {
+  padding-top: 50px;
+}
+
+footer {
+  padding: 100px 0 50px 0;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
 }
 
-
 .container {
   max-width: 1440px;
   padding: 0 130px;
   margin: 0 auto;
-}
-
-section:not(:last-child) {
-  margin: 100px 0;
 }
 
 .title {
