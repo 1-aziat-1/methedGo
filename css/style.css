@@ -1,3 +1,11 @@
+@import '/css/reset.css';
+@import '/css/style.css';
+@import '/css/section/present.css';
+@import '/css/section/hall.css';
+@import '/css/section/about.css';
+@import '/css/section/faq.css';
+@import '/css/section/contacts.css';
+
 html {
   position: relative;
   box-sizing: border-box;
@@ -70,7 +78,7 @@ section:not(:last-child) {
   margin: 100px 0;
 }
 
-.section-title {
+.title {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;

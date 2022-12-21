@@ -1,7 +1,7 @@
-.faq-list {
+.faq__list {
   padding: 0;
 }
-.faq-item {
+.faq__item {
   position: relative;
   list-style-type: none;
   background-color: #fff;
@@ -11,16 +11,16 @@
   padding: 30px 70px;
 }
 
-.faq-item:not(:last-child){
+.faq__item:not(:last-child){
   margin-bottom: 20px;
 }
 
-.faq-item:nth-child(2n) {
+.faq__item:nth-child(2n) {
   color: #fff;
   background-color: #440F51;
 }
 
-.faq-item::after {
+.faq__item::after {
   content: " ";
   position: absolute;
   top: 20px;
@@ -29,10 +29,10 @@
   height: 46px;
 }
 
-.faq-item:nth-child(1n)::after {
+.faq__item:nth-child(1n)::after {
   content: url("/img/svg/plus-purple.svg");
 }
 
-.faq-item:nth-child(2n)::after {
+.faq__item:nth-child(2n)::after {
   content: url("/img/svg/plus-white.svg");
 }

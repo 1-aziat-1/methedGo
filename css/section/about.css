@@ -1,68 +1,72 @@
-.about-title {
+.about__title {
   margin-bottom: 50px;
   font-size: 40px;
 
 }
 
-.about-blockquote {
+.about__blockquote {
   position: relative;
 }
 
-.about-text-wrapper {
+.about__text-wrapper {
   margin-bottom: 70px;
 }
 
-.about-text {
+.about__text {
   font-size: 20px;
   line-height: 20px;
 }
 
-.about-text:not(:last-child) {
+.about__text:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.about-blockquote-text {
+.about-blockquote {
+  margin: 0;
+}
+
+.about-blockquote__text {
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
 }
 
-.about-blockquote-wrapper {
+.about-blockquote__wrapper {
   padding-left: 55px;
   position: relative;
   margin-bottom: 40px;
 }
 
-.about-blockquote-wrapper::before,::after {
+.about-blockquote__wrapper::before,::after {
   font-size: 44px;
   font-weight: 700;
   color: #6C0287;
   position: absolute;
 }
 
-.about-blockquote-wrapper::before {
+.about-blockquote__wrapper::before {
   content: "“";
   left: 0;
 }
 
-.about-blockquote-wrapper::after {
+.about-blockquote__wrapper::after {
   content: "”";
   right: 95px;
   bottom: 0;
 }
 
-.about-blockquote-city-wrapper {
+.about-blockquote__city-wrapper {
   width: 275px;
   margin-left: auto;
 }
 
-.about-blockquote-city {
+.about-blockquote__city {
   position: relative;
   font-size: 20px;
   line-height: 28px;
 }
 
-.about-blockquote-city::before {
+.about-blockquote__city::before {
   content: "";
   background-image: url("/img/jpg/people.jpg");
   width: 80px;
