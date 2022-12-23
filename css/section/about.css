@@ -1,7 +1,6 @@
 .about__title {
   margin-bottom: 50px;
   font-size: 40px;
-
 }
 
 .about__context-wrapper {
@@ -10,8 +9,16 @@
   margin-left: 75px;
   vertical-align: top;
 }
-.about__img {
-  display: inline;
+
+.about__container-img {
+  display: inline-block;
+  width: 600px;
+  height: 600px;
+  background-image: url('/img/jpg/about-picture.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 .about__blockquote {
