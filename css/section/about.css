@@ -4,6 +4,16 @@
 
 }
 
+.about__context-wrapper {
+  display: inline-block;
+  max-width: 500px;
+  margin-left: 75px;
+  vertical-align: top;
+}
+.about__img {
+  display: inline;
+}
+
 .about__blockquote {
   position: relative;
 }
@@ -32,7 +42,7 @@
 }
 
 .about-blockquote__wrapper {
-  padding-left: 55px;
+  padding-left: 25px;
   position: relative;
   margin-bottom: 40px;
 }
@@ -51,7 +61,7 @@
 
 .about-blockquote__wrapper::after {
   content: "”";
-  right: 95px;
+  right: 125px;
   bottom: 0;
 }
 
