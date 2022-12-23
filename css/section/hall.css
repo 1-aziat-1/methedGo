@@ -6,16 +6,26 @@
   text-transform: uppercase;
   margin-bottom: 60px;
 }
+.hall__list {
+  display: flow-root;
+}
 
 .hall__item {
+  width: 580px;
+  float: right;
   background-position:center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 275px 0;
+  margin-bottom: 20px;
 }
 
-.hall__item:not(:last-child) {
-  margin-bottom: 60px;
+.hall__item:not(:nth-child(2n)) {
+  float: left;
+  margin-right: 20px;
+}
+
+.hall__item:nth-child(n+2) {
+  margin-bottom: 0;
 }
 
 .hall__item-vibes {
@@ -40,4 +50,5 @@
   text-align: center;
   text-transform: uppercase;
   line-height: 80px;
+  padding: 135px 0;
 }

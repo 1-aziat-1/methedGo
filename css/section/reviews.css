@@ -1,0 +1,29 @@
+.reviews__list {
+  padding: 0 100px;
+}
+
+.reviews__item {
+  display: flow-root;
+}
+
+.reviews__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.reviews__item-img-wrapper {
+  float: left;
+  margin-right: 20px;
+}
+
+.reviews__item-img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.reviews__item-img-text {
+  text-align: center;
+}
+
+.reviews__item-text {
+  padding-top: 50px;
+}
