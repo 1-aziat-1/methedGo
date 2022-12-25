@@ -30,9 +30,9 @@
 }
 
 .faq__item:nth-child(1n)::after {
-  content: url("/img/svg/plus-purple.svg");
+  content: url("../../img/svg/plus-purple.svg");
 }
 
 .faq__item:nth-child(2n)::after {
-  content: url("/img/svg/plus-white.svg");
+  content: url("../../img/svg/plus-white.svg");
 }

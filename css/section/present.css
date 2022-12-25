@@ -15,7 +15,7 @@
   position: absolute;
   right: 130px;
   top: 65px;
-  background-image: url('/img/jpg/header.png');
+  background-image: url('../../img/jpg/header.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;

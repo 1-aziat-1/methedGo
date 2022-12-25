@@ -43,16 +43,16 @@ footer {
 
 .text-location::before {
   content: '';
-  background-image: url("/img/svg/location.svg");
+  background-image: url("../img/svg/location.svg");
 }
 
 .text-phone::before {
   content: '';
-  background-image: url("/img/svg/phone.svg");
+  background-image: url("../img/svg/phone.svg");
 }
 
 .text-mail::before {
   content: '';
-  background-image: url("/img/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
 }
 
