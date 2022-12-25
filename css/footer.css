@@ -6,11 +6,11 @@ footer {
   margin-bottom: 50px;
 }
 
-.contacts__wrapper {
+.contacts-wrapper {
   margin-bottom: 40px;
 }
 
-.contacts__text {
+.contacts-text {
   position: relative;
   font-size: 24px;
   line-height: 28px;
@@ -18,11 +18,9 @@ footer {
   padding-left: 65px;
 }
 
-.contacts__text:not(:last-child) {
-  margin-bottom: 10px;
-}
 
-.contacts__text::before {
+
+.contacts-text::before {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -30,6 +28,17 @@ footer {
   top: 0;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.contacts-item {
+  display: inline-block;
+}
+
+.contacts-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 25px;
 }
 
 .text-location::before {
@@ -47,10 +56,3 @@ footer {
   background-image: url("/img/svg/mail.svg");
 }
 
-.contacts__item {
-  display: inline-block;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 25px;
-}
