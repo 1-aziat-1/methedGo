@@ -1,0 +1,52 @@
+.relax-title {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.realax__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.relax__list {
+  flex-basis: 380px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.relax__list-vr {
+  background-image: url('/img/jpg/vr.jpg');
+}
+
+.relax__list-musics {
+  background-image: url('/img/jpg/musics.jpg');
+}
+
+.relax__list-karaoke {
+  background-image: url('/img/jpg/karaoke.jpg');
+}
+
+.relax__list-games {
+  background-image: url('/img/jpg/games.jpg');
+}
+
+.relax__list-video {
+  background-image: url('/img/jpg/video.jpg');
+}
+
+.relax__list-ps5 {
+  background-image: url('/img/jpg/ps5.jpg');
+}
+
+.relax__text {
+  max-width: 310px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 166px;
+}

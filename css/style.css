@@ -1,5 +1,7 @@
 @import 'reset.css';
+@import 'header.css';
 @import 'section/present.css';
+@import 'section/relax.css';
 @import 'section/hall.css';
 @import 'section/about.css';
 @import 'section/faq.css';

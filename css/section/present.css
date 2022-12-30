@@ -1,5 +1,5 @@
 .present {
-  padding-top: 145px;
+  padding-top: 25px;
 }
 
 .present__container {
@@ -21,6 +21,10 @@
   z-index: 10;
 }
 
+.present__title-wrapper {
+  margin-bottom: 65px;
+}
+
 .present__title {
   font-size: 150px;
   font-weight: 900;
@@ -35,3 +39,52 @@
   font-size: 28px;
   line-height: 50px;
 }
+
+.present__context-wrapper {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.present__context-item {
+  flex-basis: 210px;
+  text-align: center;
+}
+
+.present__context-title {
+  font-size: 75px;
+  line-height: 105px;
+  font-weight: 900;
+  color: #CD06FF;
+  text-transform: uppercase;
+}
+
+.present__context-subtitle {
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.present__btn {
+  background-color: #6C0287;
+  border-radius: 10px;
+  padding: 25px 75px;
+  font-size: 26px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.present__link {
+  position: absolute;
+  background-image: url('/img/png/link-bottom.png');
+  width: 97px;
+  height: 97px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  bottom: 85px;
+  right: 47%;
+  z-index: 20;
+}
+
