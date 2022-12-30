@@ -6,6 +6,7 @@
 @import 'section/about.css';
 @import 'section/faq.css';
 @import 'section/reviews.css';
+@import 'section/form.css';
 @import 'footer.css';
 
 html {
@@ -58,6 +59,8 @@ p,
 figure,
 fieldset {
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
 iframe {

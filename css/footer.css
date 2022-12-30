@@ -1,13 +1,9 @@
 footer {
-  padding: 50px 0 100px;
-}
-
-.contacts  {
-  margin-bottom: 50px;
+  padding-top: 50px;
 }
 
 .contacts-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .contacts-text {
@@ -17,8 +13,6 @@ footer {
   font-weight: 700;
   padding-left: 65px;
 }
-
-
 
 .contacts-text::before {
   position: absolute;
@@ -30,15 +24,13 @@ footer {
   background-size: contain;
 }
 
-.contacts-item {
-  display: inline-block;
+.contacts-list {
+  display: flex;
+  gap: 25px;
 }
 
 .contacts-text:not(:last-child) {
   margin-bottom: 10px;
-}
-.contacts-item:not(:last-child) {
-  margin-right: 25px;
 }
 
 .text-location::before {
@@ -56,3 +48,26 @@ footer {
   background-image: url("../img/svg/mail.svg");
 }
 
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 155px;
+}
+
+.map__img {
+  object-fit: cover;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.6;
+}
+
+.footer-info__text:not(:first-child) {
+  margin-top: 5px;
+}
