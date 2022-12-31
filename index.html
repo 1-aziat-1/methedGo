@@ -79,11 +79,11 @@
       </div>
     </section>
 
-    <section class="realax">
+    <section class="relax">
       <div class="container">
-        <h2 class="relax-title title">У нас есть все для классного 
+        <h2 class="relax__title title">У нас есть все для классного 
           отдыха с друзьями!</h2>
-        <div class="realax__wrapper">
+        <div class="relax__wrapper">
           <div class="relax__list relax__list-vr">
             <p class="relax__text">VR очки</p>
           </div>
@@ -129,7 +129,7 @@
     <section class="section-form">
       <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <div class="container">
-          <h2 class="invite__title title">Забронировать зал просто</h2>
+          <h2 class="form__title title">Забронировать зал просто</h2>
           <fieldset class="form__item hall">
             <legend class="form__item-title">Выберите зал</legend>
             <fieldset class="form__item-wrapper hall__wrapper">
@@ -163,21 +163,24 @@
               </fieldset>
             </fieldset>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item data">
             <legend class="form__item-title">Выбери дату и время</legend>
             <fieldset class="data__wrapper">
-              <fieldset class="data__item presonal">
-                <fieldset class="personal-item">
-                  <label>
-                    <input type="date" name="data" placeholder="Дата" required>
-                  </label>
-                  <label>
-                    <input type="time" name="time" placeholder="Время" required>
-                  </label>
-                </fieldset>
-                <label >
-                  <input class="data__item-personal" type="number" name="person" placeholder="Сколько человек" required>
-                </label>
+              <fieldset class="data__item personal">
+                <div class="personal__item">
+                    <div class="personal__item-wrapper">
+                      <input class="personal__item-text" type="text" name="data" placeholder="Дата" required>
+                      <span class="pesonal__item-btn"></span>
+                    </div>
+                    <div class="personal__item-wrapper">
+                      <input class="personal__item-text" type="text" name="time" placeholder="Время" required>
+                      <span class="pesonal__item-btn"></span>
+                    </div>
+                </div>
+                <div class="personal__item-wrapper">
+                  <input class="personal__item-number" type="text" name="data" placeholder="Дата" required>
+                  <span class="pesonal__item-btn"></span>
+                </div>
               </fieldset>
               <fieldset class="data__item">
                 <div class="data__item-wrapper">
@@ -337,7 +340,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__item">
+        <div class="footer__item map">
           <div class="map__wrapper">
             <img class="map__img" src="img/jpg/map.jpg" alt="расположение на офисе" >
           </div>

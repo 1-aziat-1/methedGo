@@ -1,9 +1,9 @@
-.relax-title {
-  max-width: 980px;
+.relax__title {
+  max-width: 880px;
   margin: 0 auto;
 }
 
-.realax__wrapper {
+.relax__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;

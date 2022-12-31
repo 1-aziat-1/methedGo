@@ -7,25 +7,18 @@
   margin-bottom: 60px;
 }
 .hall__list {
-  display: flow-root;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .hall__item {
   width: 580px;
-  float: right;
   background-position:center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 20px;
-}
-
-.hall__item:not(:nth-child(2n)) {
-  float: left;
-  margin-right: 20px;
-}
-
-.hall__item:nth-child(n+2) {
-  margin-bottom: 0;
 }
 
 .hall__item-vibes {

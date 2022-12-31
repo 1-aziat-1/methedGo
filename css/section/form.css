@@ -88,9 +88,9 @@
   position: relative;
 }
 
-.data__item-personal,
+.personal__item-number,
 .data__item-wrapper > input {
-  flex-basis: 300px;
+  width: 300px;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 28px;
@@ -98,17 +98,16 @@
   border-radius: 5px;
 }
 
+.personal__item-number {
+  position: relative;
+}
 
 
-.data__item-personal::placeholder {
+.personal__item-number::placeholder,
+.personal__item-text::placeholder{
   color: #211E1E;
 }
 
-#spin {
-  width: 21px;
-  height: 15px;
-  border: none;
-}
 
 .data__item-wrapper > label {
   position: absolute;
@@ -130,3 +129,35 @@
   color: #6C0287;
   padding: 15px 0;
 }
+
+.personal__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal__item-wrapper {
+  position: relative;
+}
+
+.personal__item-text {
+  width: 135px;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 5px;
+}
+
+.pesonal__item-btn {
+  background-image: url('/img/png/arrow.png');
+  position: absolute;
+  width: 21px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+
+
+
