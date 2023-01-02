@@ -36,3 +36,19 @@
 .faq__item:nth-child(2n)::after {
   content: url("../../img/svg/plus-white.svg");
 }
+
+.faq__item:nth-child(1n):hover::after{
+  content: url("../../img/svg/plus-purple-hover.svg");
+}
+
+.faq__item:nth-child(1n):active::after {
+  content: url("../../img/svg/plus-purple-active.svg");
+}
+
+.faq__item:nth-child(2n):hover::after {
+  content: url("../../img/svg/plus-white-hover.svg");
+}
+
+.faq__item:nth-child(2n):active::after {
+  content: url("../../img/svg/plus-white-active.svg");
+}

@@ -8,6 +8,7 @@
   opacity: 0;
 }
 
+
 .form__item {
   margin-bottom: 60px;
   padding: 0;
@@ -36,11 +37,29 @@
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
+  border: 3px solid #fff;
   background-color: #fff;
   border-radius: 10px;
   padding: 8px 15px;
   text-align: center;
   cursor: pointer;
+}
+
+.hall__label:hover,
+.data__item-btn:hover {
+  border: 3px solid #640AA3;
+  background-color: #EADEED;
+}
+
+.hall__label:active {
+  background-color:#6C0287;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.hall__label:focus,
+.data__item-btn:focus {
+  border: 3px solid #640AA3;
 }
 
 .fun__wrapper {
@@ -62,6 +81,10 @@
 
 .fun__label:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.fun__label>input:focus {
+  outline-color: #6C0287;
 }
 
 .fun__label > input {
@@ -108,7 +131,6 @@
   color: #211E1E;
 }
 
-
 .data__item-wrapper > label {
   position: absolute;
   font-weight: 700;
@@ -128,7 +150,14 @@
   text-align: center;
   color: #6C0287;
   padding: 15px 0;
+  border: 3px solid #fff;
 }
+
+.data__item-btn:active {
+  border-color: #EADEED;
+  background-color: #EADEED;
+}
+
 
 .personal__item {
   display: flex;
@@ -158,6 +187,16 @@
   right: 20px;
 }
 
+.data__item-wrapper>input:focus {
+  outline: #CD06FF;
+  border: 2px solid #CD06FF;
+}
+
+.personal__item-number:focus,
+.personal__item-text:focus{
+  outline: #CD06FF;
+  border: 2px solid #CD06FF;
+}
 
 
 

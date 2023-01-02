@@ -71,3 +71,12 @@ footer {
 .footer-info__text:not(:first-child) {
   margin-top: 5px;
 }
+
+.link>svg:hover{
+  fill: #EADEED;
+}
+
+.link>svg:active{
+  fill: #CD06FF;
+}
+

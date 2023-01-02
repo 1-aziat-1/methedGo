@@ -14,37 +14,31 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__logo-wrapper">
-          <img class="header__logo" src="/img/png/logo-dark.png" alt="лого сайта" >
-        </div>
+    <div class="container header__container">
 
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="" class="header__link">залы</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">о нас</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">бронь</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">отзывы</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">контакты</a>
-            </li>
-          </ul>
-        </nav>
+      <img class="header__logo" src="/img/png/logo-dark.png" alt="лого сайта" >
 
-        <div class="header__btn-wrapper">
-          <button class="header__btn">заказать звонок</button>
-        </div>
-      </div>
-  
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" >залы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" >о нас</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" >бронь</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" >отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" >контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__buy">заказать звонок</button>
     </div>
   </header>
 
@@ -74,7 +68,13 @@
           <button class="present__btn">Забронировать</button>
         </div>
 
-        <a class="present__link" href="#" ></a>
+        <a class="present__link" href="#" >
+          <svg width="97" height="97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+            <rect x="34.4253" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4253 43.9162)" fill="white"/>
+            <rect x="48.5806" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5806 58.0737)" fill="white"/>
+          </svg>
+        </a>
 
       </div>
     </section>
@@ -143,11 +143,11 @@
             <legend class="form__item-title">Собери набор развелечений</legend>
             <fieldset class="form__item-wrapper fun__wrapper">
               <fieldset class="fun__item">
-                <legend class="fun__title">Приставки:</legend>
-                <label class="fun__label"><input type="radio" name="console" value="play_station">Play Station</label>
-                <label class="fun__label"><input type="radio" name="console" value="sega_mega_drive">Sega Mega Drive</label>
-                <label class="fun__label"><input type="radio" name="console" value="x_box_one_s">X-box One S</label>
-                <label class="fun__label"><input type="radio" name="console" value="dendy">Dendy</label>
+                <legend class="fun__title" >Приставки:</legend>
+                <label class="fun__label" for="consoleps"><input id="consoleps" type="radio" name="console" value="play_station">Play Station</label>
+                <label class="fun__label" for="consolesega"><input id="consolesega" type="radio" name="console" value="sega_mega_drive">Sega Mega Drive</label>
+                <label class="fun__label" for="consolexbox"><input id="consolexbox" type="radio" name="console" value="x_box_one_s">X-box One S</label>
+                <label class="fun__label" for="consoledendy"><input id="consoledendy" type="radio" name="console" value="dendy">Dendy</label>
               </fieldset>
               <fieldset  class="fun__item">
                 <legend class="fun__title">Настольный игры:</legend>
@@ -170,16 +170,16 @@
                 <div class="personal__item">
                     <div class="personal__item-wrapper">
                       <input class="personal__item-text" type="text" name="data" placeholder="Дата" required>
-                      <span class="pesonal__item-btn"></span>
+                      <span class="personal__item-btn"></span>
                     </div>
                     <div class="personal__item-wrapper">
                       <input class="personal__item-text" type="text" name="time" placeholder="Время" required>
-                      <span class="pesonal__item-btn"></span>
+                      <span class="personal__item-btn"></span>
                     </div>
                 </div>
                 <div class="personal__item-wrapper">
                   <input class="personal__item-number" type="text" name="data" placeholder="Дата" required>
-                  <span class="pesonal__item-btn"></span>
+                  <span class="personal__item-btn"></span>
                 </div>
               </fieldset>
               <fieldset class="data__item">

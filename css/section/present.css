@@ -78,13 +78,35 @@
 
 .present__link {
   position: absolute;
-  background-image: url('/img/png/link-bottom.png');
-  width: 97px;
-  height: 97px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  width: 100px;
+  height: 100px;
   bottom: 85px;
   right: 47%;
   z-index: 20;
 }
 
+.present__btn:hover, 
+.present__btn:focus {
+  background-color: #840AA3;
+}
+
+.present__btn:active {
+  background-color: #640AA3;
+}
+
+.present__link>svg:hover {
+  fill: #fff;
+}
+
+.present__link>svg:hover>rect {
+  fill: #6C0287;
+}
+
+.present__link>svg:active {
+  fill: #CD06FF;
+}
+
+.present__link:focus {
+  border: 1px solid #CD06FF;
+  outline: #CD06FF;
+}
