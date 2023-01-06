@@ -21,10 +21,6 @@
   z-index: 10;
 }
 
-.present__title-wrapper {
-  margin-bottom: 65px;
-}
-
 .present__title {
   font-size: 150px;
   font-weight: 900;
@@ -38,6 +34,7 @@
   padding-left: 100px;
   font-size: 28px;
   line-height: 50px;
+  margin-bottom: 65px;
 }
 
 .present__context-wrapper {
@@ -88,25 +85,31 @@
 .present__btn:hover, 
 .present__btn:focus {
   background-color: #840AA3;
+  transition: background-color .2s;
 }
 
 .present__btn:active {
   background-color: #640AA3;
+  transition: background-color .2s;
 }
 
 .present__link>svg:hover {
   fill: #fff;
+  transition: fill .2s ease;
 }
 
 .present__link>svg:hover>rect {
   fill: #6C0287;
+  transition: fill .2s ease;
 }
 
 .present__link>svg:active {
   fill: #CD06FF;
+  transition: fill .2s ease;
 }
 
 .present__link:focus {
   border: 1px solid #CD06FF;
   outline: #CD06FF;
+  transition: border .2s, outline .2s;
 }

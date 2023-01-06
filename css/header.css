@@ -14,10 +14,6 @@
   display: block;
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 40px;
-}
-
 .navigation__list{
   display: flex;
   justify-content: space-between;
@@ -25,6 +21,14 @@
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation__item:hover {
+  color: #CD06FF;
 }
 
 .header__buy {
@@ -42,10 +46,12 @@
 .header__buy:hover,
 .header__buy:focus {
   background-color: #CD06FF;
+  transition: background-color .2s;
 }
 
 .header__buy:active {
   background-color: #640AA3;
   border: 3px solid #000;
+  transition: background-color .2s, border .2s;
 }
 

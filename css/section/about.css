@@ -3,15 +3,17 @@
   font-size: 40px;
 }
 
+.about__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .about__context-wrapper {
-  display: inline-block;
-  max-width: 500px;
-  margin-left: 75px;
-  vertical-align: top;
+  flex-basis: 500px;
 }
 
 .about__container-img {
-  display: inline-block;
   width: 600px;
   height: 600px;
   background-image: url('../../img/jpg/about-picture.jpg');

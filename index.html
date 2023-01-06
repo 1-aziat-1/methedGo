@@ -48,10 +48,8 @@
     <section class="present">
       <div class="container present__container">
 
-        <div class="present__title-wrapper">
-          <h1 class="present__title">game over</h1>
-          <p class="present__subtitle">Новый формат игр и отдыха</p>
-        </div>
+        <h1 class="present__title">game over</h1>
+        <p class="present__subtitle">Новый формат игр и отдыха</p>
 
         <div class="present__context-wrapper">
           <div class="present__context-item">
@@ -64,9 +62,7 @@
           </div>
         </div>
 
-        <div class="present__btn-wrapper">
-          <button class="present__btn">Забронировать</button>
-        </div>
+        <button class="present__btn">Забронировать</button>
 
         <a class="present__link" href="#" >
           <svg width="97" height="97" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,26 +79,26 @@
       <div class="container">
         <h2 class="relax__title title">У нас есть все для классного 
           отдыха с друзьями!</h2>
-        <div class="relax__wrapper">
-          <div class="relax__list relax__list-vr">
+        <ul class="relax__wrapper">
+          <li class="relax__list relax__list-vr">
             <p class="relax__text">VR очки</p>
-          </div>
-          <div class="relax__list relax__list-musics">
+          </li>
+          <li class="relax__list relax__list-musics">
             <p class="relax__text">Аудио-система 5.1 с отличным зыуком</p>
-          </div>
-          <div class="relax__list relax__list-karaoke">
+          </li>
+          <li class="relax__list relax__list-karaoke">
             <p class="relax__text">Караоке (4 микрофона)</p>
-          </div>
-          <div class="relax__list relax__list-games">
+          </li>
+          <li class="relax__list relax__list-games">
             <p class="relax__text">Настольные игры</p>
-          </div>
-          <div class="relax__list relax__list-video">
+          </li>
+          <li class="relax__list relax__list-video">
             <p class="relax__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
-          </div>
-          <div class="relax__list relax__list-ps5">
+          </li>
+          <li class="relax__list relax__list-ps5">
             <p class="relax__text">РlаyStаtiоn 5</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -133,10 +129,14 @@
           <fieldset class="form__item hall">
             <legend class="form__item-title">Выберите зал</legend>
             <fieldset class="form__item-wrapper hall__wrapper">
-              <label class="hall__label"><input type="radio" name="gym" value="80_vibes">80's vibes</label>
-              <label class="hall__label"><input type="radio" name="gym" value="star_wars">start wars</label>
-              <label class="hall__label"><input type="radio" name="gym" value="wild_west">wild west</label>
-              <label class="hall__label"><input type="radio" name="gym" value="neon_style">neon style</label>
+              <input class="hall__input" id="vibes" type="radio" name="gym" value="vibes">
+              <label class="hall__label" for="vibes">80's vibes</label>
+              <input class="hall__input" id="starwars" type="radio" name="gym" value="star_wars">
+              <label class="hall__label" for="starwars">star wars</label>
+              <input class="hall__input" id="wildwest"  type="radio" name="gym" value="wild_west">
+              <label class="hall__label" for="wildwest">wild west</label>
+              <input class="hall__input" id="neonstyle" type="radio" name="gym" value="neon_style">
+              <label class="hall__label" for="neonstyle">neon style</label>
             </fieldset>
           </fieldset>
           <fieldset class="form__item fun">
@@ -212,28 +212,30 @@
     <section class="about">
       <div class="container">
         <h2 class="about__title title">О нас</h2>
-        <div class="about__container-img"></div>
-        <div class="about__context-wrapper">
-          <div class="about__text-wrapper">
-            <p class="about__text">Для наших гостей мы создали <i> концептуально новое игровое пространство виртуальной
-                реальности </i> в
-              центральной части города.
-            </p>
-            <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
-              Вас
-              топовыми игровыми
-              разработками со всего мира.
-            </p>
+        <div class="about__wrapper">
+          <div class="about__container-img"></div>
+          <div class="about__context-wrapper">
+            <div class="about__text-wrapper">
+              <p class="about__text">Для наших гостей мы создали <i> концептуально новое игровое пространство виртуальной
+                  реальности </i> в
+                центральной части города.
+              </p>
+              <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
+                Вас
+                топовыми игровыми
+                разработками со всего мира.
+              </p>
+            </div>
+            <blockquote class="about-blockquote">
+              <div class="about-blockquote__wrapper">
+                <p class="about-blockquote__text">GAME OVER —</p>
+                <p class="about-blockquote__text">это место незабываемых впечатлений</p>
+              </div>
+              <div class="about-blockquote__city-wrapper">
+                <cite class="about-blockquote__city">Аркадий Адакшин, создатель игровой территории GAME OVER</cite>
+              </div>
+            </blockquote>
           </div>
-          <blockquote class="about-blockquote">
-            <div class="about-blockquote__wrapper">
-              <p class="about-blockquote__text">GAME OVER —</p>
-              <p class="about-blockquote__text">это место незабываемых впечатлений</p>
-            </div>
-            <div class="about-blockquote__city-wrapper">
-              <cite class="about-blockquote__city">Аркадий Адакшин, создатель игровой территории GAME OVER</cite>
-            </div>
-          </blockquote>
         </div>
       </div>
     </section>
@@ -350,7 +352,7 @@
         <p class="footer-info__text">© Game Over, 2022</p>
         <div class="footer-info__group">
           <p class="footer-info__text">Design by Anastasia Ilina</p>
-          <p class="footer-info__text">ilina9825@gmail.com</p>
+          <p class="footer-info__text footer-info__gmail">ilina9825@gmail.com</p>
         </div>
       </div>
     </div>

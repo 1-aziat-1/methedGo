@@ -2,13 +2,6 @@
   background-color: #440F51;
 }
 
-.hall__label > input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-
 .form__item {
   margin-bottom: 60px;
   padding: 0;
@@ -45,6 +38,17 @@
   cursor: pointer;
 }
 
+.hall__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.hall__input:checked + .hall__label {
+  background-color: #CD06FF;
+}
+
+
 .hall__label:hover,
 .data__item-btn:hover {
   border: 3px solid #640AA3;
@@ -61,6 +65,7 @@
 .data__item-btn:focus {
   border: 3px solid #640AA3;
 }
+
 
 .fun__wrapper {
   justify-content: space-around;
@@ -197,6 +202,3 @@
   outline: #CD06FF;
   border: 2px solid #CD06FF;
 }
-
-
-

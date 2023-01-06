@@ -1,5 +1,6 @@
 footer {
   padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .contacts-wrapper {
@@ -78,5 +79,12 @@ footer {
 
 .link>svg:active{
   fill: #CD06FF;
+}
+
+.text-phone:hover,
+.text-mail:hover,
+.footer-info__gmail:hover {
+  opacity: 1;
+  color: #CD06FF;
 }
 
