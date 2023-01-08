@@ -95,17 +95,17 @@
 
 .present__link>svg:hover {
   fill: #fff;
-  transition: fill .2s ease;
+  transition: fill .2s;
 }
 
 .present__link>svg:hover>rect {
   fill: #6C0287;
-  transition: fill .2s ease;
+  transition: fill .2s;
 }
 
 .present__link>svg:active {
   fill: #CD06FF;
-  transition: fill .2s ease;
+  transition: fill .2s;
 }
 
 .present__link:focus {

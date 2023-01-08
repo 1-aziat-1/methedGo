@@ -46,6 +46,7 @@
 
 .hall__input:checked + .hall__label {
   background-color: #CD06FF;
+  color: #fff;
 }
 
 

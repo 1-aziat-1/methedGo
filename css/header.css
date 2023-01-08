@@ -29,6 +29,7 @@
 
 .navigation__item:hover {
   color: #CD06FF;
+  transition: color .2s ease;
 }
 
 .header__buy {
