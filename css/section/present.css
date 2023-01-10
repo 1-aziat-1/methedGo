@@ -53,7 +53,7 @@
   font-size: 75px;
   line-height: 105px;
   font-weight: 900;
-  color: #CD06FF;
+  color: var(--color-content, #CD06FF);
   text-transform: uppercase;
 }
 
@@ -104,12 +104,12 @@
 }
 
 .present__link>svg:active {
-  fill: #CD06FF;
+  fill: var(--color-content, #CD06FF);
   transition: fill .2s;
 }
 
 .present__link:focus {
-  border: 1px solid #CD06FF;
-  outline: #CD06FF;
+  border: 1px solid var(--color-content, #CD06FF);
+  outline: var(--color-content, #CD06FF);
   transition: border .2s, outline .2s;
 }

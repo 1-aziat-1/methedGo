@@ -17,7 +17,7 @@
 
 .faq__item:nth-child(2n) {
   color: #fff;
-  background-color: #440F51;
+  background-color: var(--color-bg--content,#440F51);
 }
 
 .faq__item::after {

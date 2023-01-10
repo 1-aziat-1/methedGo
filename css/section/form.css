@@ -45,26 +45,26 @@
 }
 
 .hall__input:checked + .hall__label {
-  background-color: #CD06FF;
+  background-color: var(--color-content, #CD06FF);
   color: #fff;
 }
 
 
 .hall__label:hover,
 .data__item-btn:hover {
-  border: 3px solid #640AA3;
+  border: 3px solid var(--color-psevdo,#6C0287);
   background-color: #EADEED;
 }
 
 .hall__label:active {
-  background-color:#6C0287;
+  background-color:var(--color-psevdo,#6C0287);
   color: #fff;
   border: 3px solid #fff;
 }
 
 .hall__label:focus,
 .data__item-btn:focus {
-  border: 3px solid #640AA3;
+  border: 3px solid var(--color-psevdo,#6C0287);
 }
 
 
@@ -90,7 +90,7 @@
 }
 
 .fun__label>input:focus {
-  outline-color: #6C0287;
+  outline-color: var(--color-psevdo,#6C0287);
 }
 
 .fun__label > input {
@@ -194,12 +194,12 @@
 }
 
 .data__item-wrapper>input:focus {
-  outline: #CD06FF;
-  border: 2px solid #CD06FF;
+  outline: var(--color-content, #CD06FF);
+  border: 2px solid var(--color-content, #CD06FF);
 }
 
 .personal__item-number:focus,
 .personal__item-text:focus{
-  outline: #CD06FF;
-  border: 2px solid #CD06FF;
+  outline: var(--color-content, #CD06FF);
+  border: 2px solid var(--color-content, #CD06FF);
 }

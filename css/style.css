@@ -9,6 +9,12 @@
 @import 'section/form.css';
 @import 'footer.css';
 
+:root {
+  --color-content: #CD06FF;
+  --color-bg--content: #440F51;
+  --color-psevdo: #6C0287;
+}
+
 html {
   position: relative;
   box-sizing: border-box;

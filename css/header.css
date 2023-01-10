@@ -28,7 +28,7 @@
 }
 
 .navigation__item:hover {
-  color: #CD06FF;
+  color: var(--color-content, #CD06FF);
   transition: color .2s ease;
 }
 
@@ -40,13 +40,13 @@
   background-color: inherit;
   text-transform: uppercase;
   padding: 12px 29px;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--color-content, #CD06FF);
   border-radius: 10px;
 }
 
 .header__buy:hover,
 .header__buy:focus {
-  background-color: #CD06FF;
+  background-color: var(--color-content, #CD06FF);
   transition: background-color .2s;
 }
 

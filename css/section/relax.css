@@ -1,9 +1,13 @@
+.relax {
+  padding-bottom: calc(50px + 70px);
+}
+
 .relax__title {
   max-width: 880px;
   margin: 0 auto;
 }
 
-.relax__wrapper {
+.relax__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,34 +15,44 @@
   gap: 40px 20px;
 }
 
-.relax__list {
+.relax__item {
   flex-basis: 380px;
   height: 230px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.relax__list-vr {
+.relax__item:nth-child(3n+2){
+  transform: translateY(70px);
+}
+
+.relax__item:hover:nth-child(3n+2) {
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+
+
+.relax__item-vr {
   background-image: url('/img/jpg/vr.jpg');
 }
 
-.relax__list-musics {
+.relax__item-musics {
   background-image: url('/img/jpg/musics.jpg');
 }
 
-.relax__list-karaoke {
+.relax__item-karaoke {
   background-image: url('/img/jpg/karaoke.jpg');
 }
 
-.relax__list-games {
+.relax__item-games {
   background-image: url('/img/jpg/games.jpg');
 }
 
-.relax__list-video {
+.relax__item-video {
   background-image: url('/img/jpg/video.jpg');
 }
 
-.relax__list-ps5 {
+.relax__item-ps5 {
   background-image: url('/img/jpg/ps5.jpg');
 }
 
@@ -51,7 +65,7 @@
   padding-top: 166px;
 }
 
-.relax__list:hover {
+.relax__item:hover {
   transform: scale(1.1);
   transition: transform .2s;
 }

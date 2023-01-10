@@ -1,6 +1,7 @@
 footer {
   padding-top: 50px;
   padding-bottom: 10px;
+  background-image: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .contacts-wrapper {
@@ -78,13 +79,13 @@ footer {
 }
 
 .link>svg:active{
-  fill: #CD06FF;
+  fill: var(--color-content, #CD06FF);
 }
 
 .text-phone:hover,
 .text-mail:hover,
 .footer-info__gmail:hover {
   opacity: 1;
-  color: #CD06FF;
+  color: var(--color-content, #CD06FF);
 }
 
