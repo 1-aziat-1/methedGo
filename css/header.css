@@ -1,0 +1,25 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  padding: 0 95px;
+  flex-basis: 100%;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
