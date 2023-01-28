@@ -53,17 +53,17 @@
 
 .reviews__item-img-maks::before {
   content: '';
-  background-image: url('/img/jpg/maks.jpg');
+  background-image: url('../../img/jpg/maks.jpg');
 }
 
 .reviews__item-img-nikita::before {
   content: '';
-  background-image: url('/img/jpg/nikita.jpg');
+  background-image: url('../../img/jpg/nikita.jpg');
 }
 
 .reviews__item-img-oksana::before {
   content: '';
-  background-image: url('/img/jpg/oksana.jpg');
+  background-image: url('../../img/jpg/oksana.jpg');
 }
 
 

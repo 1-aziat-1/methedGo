@@ -33,27 +33,27 @@
 
 
 .relax__item-vr {
-  background-image: url('/img/jpg/vr.jpg');
+  background-image: url('../../img/jpg/vr.jpg');
 }
 
 .relax__item-musics {
-  background-image: url('/img/jpg/musics.jpg');
+  background-image: url('../../img/jpg/musics.jpg');
 }
 
 .relax__item-karaoke {
-  background-image: url('/img/jpg/karaoke.jpg');
+  background-image: url('../../img/jpg/karaoke.jpg');
 }
 
 .relax__item-games {
-  background-image: url('/img/jpg/games.jpg');
+  background-image: url('../../img/jpg/games.jpg');
 }
 
 .relax__item-video {
-  background-image: url('/img/jpg/video.jpg');
+  background-image: url('../../img/jpg/video.jpg');
 }
 
 .relax__item-ps5 {
-  background-image: url('/img/jpg/ps5.jpg');
+  background-image: url('../../img/jpg/ps5.jpg');
 }
 
 .relax__text {
