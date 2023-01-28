@@ -16,6 +16,12 @@
   <header class="header">
     <div class="container header__container">
 
+      <button class="header__menu-min menu">
+        <span class="menu__icon"></span>
+        <span class="menu__icon"></span>
+        <span class="menu__icon short"></span>
+      </button>
+
       <img class="header__logo" src="/img/png/logo-dark.png" alt="лого сайта" >
 
       <nav class="header__navigation navigation">
@@ -43,7 +49,7 @@
   </header>
 
 
-  <main class="main">
+<main class="main">
 
     <section class="present">
       <div class="container present__container">
@@ -53,19 +59,19 @@
 
         <div class="present__context-wrapper">
           <div class="present__context-item">
-            <p class="present__context-title">4</p>
+            <p class="present__context-num">4</p>
             <p class="present__context-subtitle">Тематических зала</p>
           </div>
           <div class="present__context-item">
-            <p class="present__context-title">new</p>
+            <p class="present__context-text">new</p>
             <p class="present__context-subtitle">Новейшая аппаратура</p>
           </div>
         </div>
 
         <button class="present__btn">Забронировать</button>
 
-        <a class="present__link" href="#" >
-          <svg width="97" height="97" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="present__link" href="#relax" >
+          <svg width="97" height="97" fill="none" viewbox="0 0 100 100">
             <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
             <rect x="34.4253" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4253 43.9162)" fill="white"/>
             <rect x="48.5806" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5806 58.0737)" fill="white"/>
@@ -75,16 +81,16 @@
       </div>
     </section>
 
-    <section class="relax">
+     <section class="relax" id="relax">
       <div class="container">
-        <h2 class="relax__title title">У нас есть все для классного 
+        <h2 class="relax__title title">У нас есть все для классного <br/>
           отдыха с друзьями!</h2>
         <ul class="relax__list">
           <li class="relax__item relax__item-vr">
             <p class="relax__text">VR очки</p>
           </li>
           <li class="relax__item relax__item-musics">
-            <p class="relax__text">Аудио-система 5.1 с отличным зыуком</p>
+            <p class="relax__text">Аудио-система 5.1 с отличным звуком</p>
           </li>
           <li class="relax__item relax__item-karaoke">
             <p class="relax__text">Караоке (4 микрофона)</p>
@@ -107,107 +113,123 @@
         <h2 class="hall__title title">Наши залы</h2>
         <ul class="hall__list">
           <li class="hall__item hall__item-vibes">
-            <p class="hall__item-text">80's vibes</p>
+            <a href="pages/vibes.html" class="hall__item-link">
+              <p class="hall__item-text">80's vibes</p>
+            </a>
           </li>
           <li class="hall__item hall__item-wars">
-            <p class="hall__item-text">star wars</p>
+            <a href="pages/wars.html" class="hall__item-link">
+              <p class="hall__item-text">star wars</p>
+            </a>
           </li>
           <li class="hall__item hall__item-west">
-            <p class="hall__item-text">wild west</p>
+            <a href="pages/west.html" class="hall__item-link">
+              <p class="hall__item-text">wild west</p>
+            </a>
           </li>
           <li class="hall__item hall__item-style">
-            <p class="hall__item-text">neon style</p>
+            <a href="pages/neon.html" class="hall__item-link">
+              <p class="hall__item-text">neon style</p>
+            </a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="section-form">
-      <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-        <div class="container">
-          <h2 class="form__title title">Забронировать зал просто</h2>
-          <fieldset class="form__item hall">
-            <legend class="form__item-title">Выберите зал</legend>
-            <fieldset class="form__item-wrapper hall__wrapper">
+      <div class="container">
+        <h2 class="section-form__title title">Забронировать зал просто</h2>
+        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <fieldset class="hall">
+            <legend class="form__legend-title">Выбери зал</legend>
+            <div class="form__item-wrapper hall__wrapper">
               <input class="hall__input" id="vibes" type="radio" name="gym" value="vibes">
               <label class="hall__label" for="vibes">80's vibes</label>
               <input class="hall__input" id="starwars" type="radio" name="gym" value="star_wars">
               <label class="hall__label" for="starwars">star wars</label>
-              <input class="hall__input" id="wildwest"  type="radio" name="gym" value="wild_west">
+              <input class="hall__input" id="wildwest" type="radio" name="gym" value="wild_west">
               <label class="hall__label" for="wildwest">wild west</label>
               <input class="hall__input" id="neonstyle" type="radio" name="gym" value="neon_style">
               <label class="hall__label" for="neonstyle">neon style</label>
-            </fieldset>
+            </div>
           </fieldset>
-          <fieldset class="form__item fun">
-            <legend class="form__item-title">Собери набор развелечений</legend>
-            <fieldset class="form__item-wrapper fun__wrapper">
+          <fieldset class="fun">
+            <legend class="form__legend-title">Собери набор развлечений</legend>
+            <div class="form__item-wrapper fun__wrapper">
               <fieldset class="fun__item">
-                <legend class="fun__title" >Приставки:</legend>
-                <label class="fun__label" for="consoleps"><input id="consoleps" type="radio" name="console" value="play_station">Play Station</label>
-                <label class="fun__label" for="consolesega"><input id="consolesega" type="radio" name="console" value="sega_mega_drive">Sega Mega Drive</label>
-                <label class="fun__label" for="consolexbox"><input id="consolexbox" type="radio" name="console" value="x_box_one_s">X-box One S</label>
-                <label class="fun__label" for="consoledendy"><input id="consoledendy" type="radio" name="console" value="dendy">Dendy</label>
+                <legend class="fun__title">Приставка:</legend>
+                <label class="fun__label" for="consoleps"><input id="consoleps" type="radio" name="console"
+                    value="play_station">Play Station 5</label>
+                <label class="fun__label" for="consolesega"><input id="consolesega" type="radio" name="console"
+                    value="sega_mega_drive">Sega Mega Drive</label>
+                <label class="fun__label" for="consolexbox"><input id="consolexbox" type="radio" name="console"
+                    value="x_box_one_s">X-box One S</label>
+                <label class="fun__label" for="consoledendy"><input id="consoledendy" type="radio" name="console"
+                    value="dendy">Dendy</label>
               </fieldset>
-              <fieldset  class="fun__item">
-                <legend class="fun__title">Настольный игры:</legend>
+              <fieldset class="fun__item">
+                <legend class="fun__title">Настольные игры</legend>
                 <label class="fun__label"><input type="checkbox" name="table_game" value="jenga">Jenga</label>
                 <label class="fun__label"><input type="checkbox" name="table_game" value="monopoly">Monopoly</label>
                 <label class="fun__label"><input type="checkbox" name="table_game" value="machkin">Мачкин</label>
                 <label class="fun__label"><input type="checkbox" name="table_game" value="alias">Alias</label>
               </fieldset>
               <fieldset class="fun__item">
-                <legend class="fun__title">Дополнительно:</legend>
+                <legend class="fun__title">Дополнительно</legend>
                 <label class="fun__label"><input type="checkbox" name="dop_game" value="microphone">Караоке</label>
                 <label class="fun__label"><input type="checkbox" name="dop_game" value="vr">VR</label>
               </fieldset>
-            </fieldset>
+            </div>
           </fieldset>
-          <fieldset class="form__item data">
-            <legend class="form__item-title">Выбери дату и время</legend>
-            <fieldset class="data__wrapper">
+          <fieldset class="data">
+            <legend class="form__legend-title">Выбери дату и время</legend>
+            <div class="data__wrapper">
               <fieldset class="data__item personal">
                 <div class="personal__item">
-                    <div class="personal__item-wrapper">
-                      <input class="personal__item-text" type="text" name="data" placeholder="Дата" required>
-                      <span class="personal__item-btn"></span>
-                    </div>
-                    <div class="personal__item-wrapper">
-                      <input class="personal__item-text" type="text" name="time" placeholder="Время" required>
-                      <span class="personal__item-btn"></span>
-                    </div>
+                  <div class="personal__item-wrapper">
+                    <input class="personal__item-text" type="text" name="data" placeholder="Дата" required>
+                    <span class="personal__item-btn"></span>
+                  </div>
+                  <div class="personal__item-wrapper">
+                    <input class="personal__item-text" type="text" name="time" placeholder="Время" required>
+                    <span class="personal__item-btn"></span>
+                  </div>
                 </div>
-                <div class="personal__item-wrapper">
-                  <input class="personal__item-number" type="text" name="data" placeholder="Дата" required>
+                <div class="personal__item-inner">
+                  <input class="personal__item-number" type="text" name="data" placeholder="Сколько человек" required>
                   <span class="personal__item-btn"></span>
                 </div>
               </fieldset>
-              <fieldset class="data__item">
-                <div class="data__item-wrapper">
-                  <label class="data__item-label">Имя</label>
-                  <input type="text" name="name" required>
-                </div>
-                <div class="data__item-wrapper">
-                  <label class="data__item-label">Фамилия</label>
-                  <input type="text" name="sername" required>
-                </div>
-              </fieldset>
-              <fieldset class="data__item">
-                <div class="data__item-wrapper">
-                  <label class="data__item-label">Телефона</label>
-                  <input type="tel" name="tel" required>
-                </div>
-                <div class="data__item-wrapper">
-                  <label class="data__item-label">Email</label>
-                  <input type="email" name="email" required>
-                </div>
-                <button class="data__item-btn" type="submit" formtarget="_blank">Забронировать</button>
-              </fieldset>
-            </fieldset>
+              <div class="data__item-info">
+                <fieldset class="data__item info">
+                  <div class="info__item-wrapper">
+                    <label class="info__item-label">Имя</label>
+                    <input class="info__item-text" type="text" name="name" required>
+                  </div>
+                  <div class="info__item-wrapper">
+                    <label class="info__item-label">Фамилия</label>
+                    <input class="info__item-text" type="text" name="sername" required>
+                  </div>
+                </fieldset>
+                <fieldset class="data__item info">
+                  <div class="info__item-wrapper">
+                    <label class="info__item-label">Телефона</label>
+                    <input class="info__item-text big" type="tel" name="tel" required>
+                  </div>
+                  <div class="info__item-wrapper">
+                    <label class="info__item-label">Email</label>
+                    <input class="info__item-text big" type="email" name="email" required>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <button class="data__item-btn" type="submit" formtarget="_blank">Забронировать</button>
           </fieldset>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
+
+    
 
     <section class="about">
       <div class="container">
@@ -216,8 +238,8 @@
           <div class="about__container-img"></div>
           <div class="about__context-wrapper">
             <div class="about__text-wrapper">
-              <p class="about__text">Для наших гостей мы создали <i> концептуально новое игровое пространство виртуальной
-                  реальности </i> в
+              <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
+                  реальности в
                 центральной части города.
               </p>
               <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
@@ -237,8 +259,17 @@
             </blockquote>
           </div>
         </div>
+        <blockquote class="about-blockquote mini-blockquote">
+          <div class="about-blockquote__wrapper mini-blockquote__wrapper">
+            <p class="about-blockquote__text mini-blockquote__text">GAME OVER — это место незабываемых впечатлений</p>
+          </div>
+          <div class="about-blockquote__city-wrapper mini-blockquote__city-wrapper">
+            <cite class="about-blockquote__city mini-blockquote__city">Аркадий Адакшин, создатель игровой территории GAME OVER</cite>
+          </div>
+        </blockquote>
       </div>
     </section>
+
 
     <section class="reviews">
       <div class="container reviews__container">
@@ -281,14 +312,24 @@
       <div class="container">
         <h2 class="faq__title title">Частые вопросы</h2>
         <ul class="faq__list">
-          <li class="faq__item">Можно ли забронировать комнату онлайн</li>
-          <li class="faq__item">Могут ли мне венруть деньги за бронь</li>
-          <li class="faq__item">Какая комната самая популярная</li>
-          <li class="faq__item">Как получить VIP карту</li>
-          <li class="faq__item">Какая комната с видом на море</li>
+          <li class="faq__item">
+            <p class="faq__item-text">Можно ли забронировать комнату онлайн?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-text">Могут ли мне вернуть деньги за бронь?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-text">Какая комната самая популярная?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-text">Как получить VIP карту?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-text">Какая комната самая популярная?</p>
+          </li>
         </ul>
       </div>
-    </section>
+    </section> 
   </main>
 
   <footer class="footer">
@@ -297,12 +338,12 @@
       <div class="footer__wrapper">
         <div class="footer__item contacts">
           <div class="contacts-wrapper">
-            <p class="contacts-text text-location">г.Москва ул.Аквамарин,16</p>
+            <p class="contacts-text text-location">г. Москва <br> ул. Усачёва, 29 к3</p>
             <p class="contacts-text text-phone">
-              <a href="tel:89509302893">8(950)930-28-93</a>
+              <a href="tel:89509302893">8(950) 930 - 28 - 93</a>
             </p>
             <p class="contacts-text text-mail">
-              <a href="mailto:GameOver@gmail.ru">GameOver@gmail.ru</a>
+              <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
             </p>
           </div>
           <ul class="contacts-list">

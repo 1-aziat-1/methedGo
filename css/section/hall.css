@@ -1,3 +1,7 @@
+.hall {
+  padding-bottom: 100px;
+}
+
 .hall__title {
   font-size: 40px;
   font-weight: 700;
@@ -15,10 +19,21 @@
 }
 
 .hall__item {
-  width: 580px;
+  flex-basis: 580px;
   background-position:center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+}
+
+.hall__item-text {
+  max-width: 252px;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 80px;
+  padding: 95px 0;
+  margin: 0 auto;
 }
 
 .hall__item-vibes {
@@ -37,11 +52,60 @@
   background-image: url('../../img/jpg/neonstyle.jpg');
 }
 
-.hall__item-text {
-  font-size: 70px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 80px;
-  padding: 135px 0;
+@media (max-width: 1360px) {
+  .hall {
+    padding-bottom: 57px;
+  }
+
+  .hall__item {
+    flex-basis: 430px;
+  }
+
+  .hall__item-text {
+    padding: 73px 0;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hall {
+    padding-bottom: 100px;
+  }
+
+  .hall__list {
+    gap: 5px;
+  }
+
+  .hall__item {
+    flex-basis: 305px;
+  }
+
+  .hall__item-text {
+    max-width: 121px;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 43px 0 46px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hall {
+    padding-bottom: 30px;
+  }
+
+  h2.hall__title {
+    margin-bottom: 15px;
+  }
+
+  .hall__list {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .hall__item-text {
+    font-size: 26px;
+    line-height: 34px;
+    padding: 54px 0 46px;
+  }
 }

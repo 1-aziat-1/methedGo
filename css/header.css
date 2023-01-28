@@ -1,6 +1,7 @@
 .header {
   padding-top: 30px;
   padding-bottom: 25px;
+  font-size: 22px;
 }
 
 .header__container {
@@ -9,8 +10,41 @@
   align-items: center;
 }
 
+.menu {
+  display: none;
+  background-color: inherit;
+  border: inherit;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.menu:hover span {
+  background-color: var( --color-content, #CD06FF);
+  transition: background-color .2s;
+}
+
+.menu:focus {
+  border: 2px solid var( --color-content, #CD06FF);
+  outline-color: var( --color-content, #CD06FF);
+  transition: border .2s;
+}
+
+.menu__icon {
+  width: 54px;
+  height: 5px;
+  background-color: #6C0287;
+  border-radius: 2px;
+}
+
+.menu__icon.short {
+  width: 31px;
+}
+
+
 .header__logo {
-  object-fit: contain;
+  width: 120px;
+  height: 66px;
+  object-fit: 100%;
   display: block;
 }
 
@@ -18,13 +52,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 22px;
+  gap: 40px;
   line-height: 50px;
   text-transform: uppercase;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .navigation__item:hover {
@@ -33,7 +63,6 @@
 }
 
 .header__buy {
-  font-size: 22px;
   line-height: 30px;
   font-weight: 700;
   color: #fff;
@@ -46,13 +75,70 @@
 
 .header__buy:hover,
 .header__buy:focus {
-  background-color: var(--color-content, #CD06FF);
-  transition: background-color .2s;
+  border-color: var( --color-psevdo, #6C0287);
+  background-color: var( --color-psevdo, #6C0287);
+  transition: background-color .2s, border-color .2s;
 }
 
 .header__buy:active {
   background-color: #640AA3;
-  border: 3px solid #000;
-  transition: background-color .2s, border .2s;
+  border-color:#000;
+  transition: background-color .2s, border-color .2s;
 }
 
+
+@media (max-width: 1360px) {
+  .header {
+    font-size: 18px;
+  }
+
+  .header__logo {
+    width: 87px;
+    height: 55px;
+  }
+  .navigation__list {
+    gap: 20px;
+    line-height: 22px;
+  }
+  .header__buy {
+    line-height: 24px;
+    padding: 10px 26px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+
+  .header {
+    padding-top: 32px;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px 0 15px;
+  }
+
+  .header__buy {
+    display: none;
+  }
+
+  .menu__icon {
+    width: 39px;
+  }
+
+  .menu__icon.short {
+    width: 22px;
+  }
+
+  .header__logo {
+    width: 66px;
+    height: 42px;
+  }
+}

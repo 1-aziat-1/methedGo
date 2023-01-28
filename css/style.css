@@ -8,11 +8,15 @@
 @import 'section/reviews.css';
 @import 'section/form.css';
 @import 'footer.css';
+@import 'page/about-page.css';
+@import 'page/description.css';
+@import 'page/room.css';
 
 :root {
   --color-content: #CD06FF;
   --color-bg--content: #440F51;
   --color-psevdo: #6C0287;
+  --size-text--form: 22px;
 }
 
 html {
@@ -43,6 +47,7 @@ img, svg {
 
 
 button {
+  display: block;
   padding: 0;
   cursor: pointer;
 }
@@ -74,11 +79,7 @@ iframe {
 }
 
 section {
-  padding-bottom: 50px;
-}
-
-section:not(:first-child) {
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 .visually-hidden {
@@ -95,12 +96,56 @@ section:not(:first-child) {
 .title {
   font-size: 40px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 49px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .blockquote {
   text-transform: uppercase;
+}
+
+@media (max-width: 1360px){
+  .container {
+    max-width: 1030px;
+    padding: 0 60px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  section {
+    padding: 15px 0;
+  }
 }

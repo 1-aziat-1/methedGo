@@ -1,11 +1,11 @@
 .present {
   padding-top: 25px;
+  padding-bottom: 202px;
 }
 
 .present__container {
   position: relative;
   z-index: 1;
-  height: 825px;
 }
 
 .present__container::after {
@@ -17,7 +17,7 @@
   top: 65px;
   background-image: url('../../img/jpg/header.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   z-index: 10;
 }
 
@@ -34,7 +34,7 @@
   padding-left: 100px;
   font-size: 28px;
   line-height: 50px;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 
 .present__context-wrapper {
@@ -44,15 +44,30 @@
   gap: 40px;
 }
 
-.present__context-item {
-  flex-basis: 210px;
+.present__context-item:nth-child(1) {
+  flex-basis: 193px;
   text-align: center;
 }
 
-.present__context-title {
-  font-size: 75px;
-  line-height: 105px;
+.present__context-item:nth-child(2) {
+  flex-basis: 166px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.present__context-num {
   font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: var(--color-content, #CD06FF);
+  text-transform: uppercase;
+}
+
+.present__context-text {
+  font-size: 65px;
+  line-height: 95px;
+  font-weight: 900;
+  font-variant: small-caps;
   color: var(--color-content, #CD06FF);
   text-transform: uppercase;
 }
@@ -65,26 +80,32 @@
 .present__btn {
   background-color: #6C0287;
   border-radius: 10px;
-  padding: 25px 75px;
+  padding: 23px 67px;
   font-size: 26px;
   line-height: 30px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  box-shadow: 0 0 2px 5px rgba(108,2,135,.2);
+  border: inherit;
 }
 
 .present__link {
   position: absolute;
-  width: 100px;
+  width: 97px;
   height: 100px;
-  bottom: 85px;
+  bottom: -70px;
   right: 47%;
   z-index: 20;
 }
 
-.present__btn:hover, 
-.present__btn:focus {
+.present__btn:hover {
   background-color: #840AA3;
+  transition: background-color .2s;
+}
+
+.present__btn:focus {
+  background-color:  var(--color-psevdo, #6C0287);
   transition: background-color .2s;
 }
 
@@ -93,8 +114,9 @@
   transition: background-color .2s;
 }
 
+
 .present__link>svg:hover {
-  fill: #fff;
+  fill: white;
   transition: fill .2s;
 }
 
@@ -103,13 +125,206 @@
   transition: fill .2s;
 }
 
+.present__link>svg:active>rect  {
+  fill: #fff;
+  transition: fill .2s;
+}
+
 .present__link>svg:active {
   fill: var(--color-content, #CD06FF);
   transition: fill .2s;
 }
 
+.present__link>svg:active>circle {
+  stroke: var(--color-content, #CD06FF);
+  transition: all .2s;
+}
+
+
 .present__link:focus {
   border: 1px solid var(--color-content, #CD06FF);
   outline: var(--color-content, #CD06FF);
-  transition: border .2s, outline .2s;
+  transition: all .2s;
 }
+
+@media (max-width: 1360px) {
+  .present {
+    padding: 5px 0 60px;
+  }
+
+  .present__title {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .present__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+
+  .present__context-subtitle {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .present__context-wrapper {
+    margin-bottom: 80px;
+    gap: 25px;
+  }
+
+  .present__context-item:nth-child(1),
+  .present__context-item:nth-child(2)  {
+    flex-basis: 170px;
+  }
+
+  .present__context-num{
+    font-size: 80px;
+    line-height: 130px;
+  }
+
+  .present__context-text{
+    font-size: 54px;
+    line-height: 80px;
+  }
+
+  .present__btn {
+    font-size: 22px;
+    padding: 17px 48px;
+  }
+
+  .present__container::after {
+    width: 453px;
+    height: 520px;
+    right: 55px;
+    top: 62px;
+  }
+
+  .present__link{
+    bottom: -20px;
+    width: 67px;
+    height: 67px;
+  }
+  
+}
+
+@media (max-width: 1000px) {
+  .present {
+    padding-bottom: 102px;
+  }
+  
+  .present__title {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .present__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .present__context-wrapper {
+    gap: 22px;
+    margin-bottom: 99px;
+  }
+
+  .present__context-num {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .present__context-text {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .present__context-subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .present__context-item:nth-child(1),
+  .present__context-item:nth-child(2) {
+    flex-basis: 103px;
+  }
+
+  .present__btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 32px;
+  }
+  
+  .present__container::after {
+    width: 422px;
+    height: 479px;
+    right: 35px;
+    top: 57px;
+  }
+
+  .present__link {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .present {
+    padding-bottom: 30px;
+  }
+
+  .present__title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 8px;
+  }
+
+  .present__subtitle {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 13px;
+    padding-left: 20px;
+  }
+
+  .present__context-wrapper {
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .present__context-num {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .present__context-text {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .present__context-subtitle {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .present__context-item:nth-child(1),
+  .present__context-item:nth-child(2) {
+    flex-basis: 65px;
+  }
+
+  .present__btn {
+    font-size: 10px;
+    border-radius: 6px;
+    line-height: 12px;
+    padding: 8px 13px;
+    border: inherit;
+  }
+
+  .present__container::after {
+    width: 161px;
+    height: 179px;
+    right: 21px;
+    top: 24px;
+  }
+}
+
+

@@ -1,4 +1,5 @@
 .about__title {
+  padding-top: 100px;
   margin-bottom: 50px;
   font-size: 40px;
 }
@@ -14,12 +15,12 @@
 }
 
 .about__container-img {
-  width: 600px;
+  flex-basis: 600px;
   height: 600px;
   background-image: url('../../img/jpg/about-picture.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 
 }
 
@@ -27,13 +28,17 @@
   position: relative;
 }
 
+.mini-blockquote {
+  display: none;
+}
+
 .about__text-wrapper {
-  margin-bottom: 70px;
+  margin-bottom: 87px;
 }
 
 .about__text {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .about__text:not(:last-child) {
@@ -44,16 +49,13 @@
   margin: 0;
 }
 
-.about-blockquote__text {
-  font-size: 44px;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-
 .about-blockquote__wrapper {
   padding-left: 25px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 
 .about-blockquote__wrapper::before,::after {
@@ -75,23 +77,197 @@
 }
 
 .about-blockquote__city-wrapper {
-  width: 275px;
+  width: 279px;
   margin-left: auto;
-}
-
-.about-blockquote__city {
   position: relative;
   font-size: 20px;
   line-height: 28px;
 }
 
+
 .about-blockquote__city::before {
   content: "";
   background-image: url("/img/jpg/people.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 80px;
   height: 80px;
   position: absolute;
   left: -110px;
   top: 0;
   border-radius: 50%;
+}
+
+@media (max-width: 1360px) {
+  h2.about__title {
+    padding-top: 17px;
+    margin-bottom: 28px;
+  }
+  
+  .about__wrapper {
+    column-gap: 40px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about__container-img {
+    flex-basis: 420px;
+    height: 420px;
+  }
+
+  .about__text-wrapper {
+    margin-bottom: 67px;
+  }
+
+  .about__context-wrapper {
+    flex-basis: 444px;
+  }
+
+  .about-blockquote__wrapper {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about-blockquote__wrapper::after {
+    right: 171px;
+    bottom: -5px;
+  }
+
+  .about-blockquote__city-wrapper {
+    width: 225px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .about-blockquote__city::before  {
+    width: 70px;
+    height: 70px;
+    top: 7px;
+  }
+}
+
+  @media (max-width: 1000px) {
+  .about {
+    padding-top: 43px;
+  }
+
+  .about__wrapper {
+    gap: 28px;
+    margin-bottom: 44px;
+  }
+
+  .about__container-img {
+    flex-basis: 382px;
+    height: 380px;
+  }
+
+  .about__context-wrapper {
+    flex-basis: 278px;
+    align-self: center;
+  }
+
+
+  .about__text-wrapper {
+    margin-bottom: 0;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .about-blockquote {
+    display: none;
+  }
+
+  .mini-blockquote {
+    display: block;
+  }
+
+  .mini-blockquote__wrapper {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+    .mini-blockquote__wrapper::after {
+    right: 120px;
+    bottom: 0px;
+  }
+
+  .mini-blockquote__city::before {
+    top: 9px;
+    left: -95px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    padding-top: 13px;
+  }
+
+  h2.about__title {
+    margin-bottom: 15px;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px 0;
+    margin-bottom: 22px;
+  }
+
+  .about__container-img {
+    order: 1;
+    flex-basis: 280px;
+    width: 280px;
+  }
+
+  .about__context-wrapper {
+    flex-basis: 127px;
+    align-self: center;
+  }
+
+  .about__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__text:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  .mini-blockquote__wrapper {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .about-blockquote__wrapper::before, ::after {
+    font-size: 28px;
+  }
+
+  .mini-blockquote__wrapper::after {
+    right: 118px;
+  }
+
+  .mini-blockquote__city::before {
+    width: 56px;
+    height: 56px;
+    top: 0px;
+    left: -71px;
+  }
+
+  .about-blockquote__city-wrapper {
+    width: 210px;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
