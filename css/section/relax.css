@@ -4,6 +4,8 @@
 
 .relax__title {
   line-height: 40px;
+  max-width: 710px;
+  margin: 0 auto;
 }
 
 .relax__list {
@@ -27,8 +29,8 @@
 }
 
 .relax__item:hover:nth-child(3n+2) {
-  transform: scale(1.1);
-  transition: transform .2s;
+  transform: scale(1.1) translateY(70px);
+  transition: transform .2s ease-in;
 }
 
 
@@ -78,6 +80,7 @@
 
   h2.relax__title {
     margin-bottom: 37px;
+    max-width: 550px;
   }
 
   .relax__list {
@@ -97,6 +100,10 @@
   .relax__item:nth-child(3n+2){
     transform: translateY(53px);
   }
+
+  .relax__item:hover:nth-child(3n+2) {
+    transform: scale(1.1) translateY(53px);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -107,6 +114,7 @@
 
   h2.relax__title {
     margin-bottom: 30px;
+    max-width: 430px;
   }
 
   .relax__list {
@@ -134,6 +142,7 @@
 
   h2.relax__title {
     margin-bottom: 15px;
+    max-width: 300px;
   }
 
   .relax__list {

@@ -185,6 +185,8 @@ footer {
 
   .footer__wrapper {
     margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
   }
 
   h2.contacts-title {
@@ -196,6 +198,10 @@ footer {
     line-height: 18px;
     text-align: center;
     padding: 0;
+  }
+
+  .footer__item.contacts {
+    width: 200px;
   }
 
   .contacts-text:not(:last-child) {
@@ -212,15 +218,15 @@ footer {
   }
 
   .text-location::before {
-    left: 80px;
+    left: 42px;
   }
 
   .text-phone::before{
-    left: 55px;
+    left: 15px;
   }
   
   .text-mail::before {
-    left: 37px;
+    left: 0;
   }
 
   .contacts-wrapper {
@@ -239,7 +245,9 @@ footer {
   }
 
   .map__img {
+    display: block;
     height: 194px;
+    margin: 0 auto;
   }
 
   .footer-info {
