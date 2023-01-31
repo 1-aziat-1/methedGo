@@ -143,9 +143,7 @@
   .about-page__wrapper {
     padding-left: 20px;
   }
-}
 
-@media (max-width: 320px) {
   .about-page__title {
     padding: 66px 0;
     font-size: 30px;

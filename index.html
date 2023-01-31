@@ -16,7 +16,7 @@
   <header class="header">
     <div class="container header__container">
 
-      <button class="header__menu-min menu">
+      <button class="header__menu-min menu" type="menu">
         <span class="menu__icon"></span>
         <span class="menu__icon"></span>
         <span class="menu__icon short"></span>
@@ -27,24 +27,24 @@
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" >залы</a>
+            <a href="#hall" >залы</a>
           </li>
           <li class="navigation__item">
-            <a href="#" >о нас</a>
+            <a href="#about" >о нас</a>
           </li>
           <li class="navigation__item">
-            <a href="#" >бронь</a>
+            <a href="#form">бронь</a>
           </li>
           <li class="navigation__item">
-            <a href="#" >отзывы</a>
+            <a href="#reviews" >отзывы</a>
           </li>
           <li class="navigation__item">
-            <a href="#" >контакты</a>
+            <a href="#footer" >контакты</a>
           </li>
         </ul>
       </nav>
 
-      <button class="header__buy">заказать звонок</button>
+      <button class="header__buy" type="button">заказать звонок</button>
     </div>
   </header>
 
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-     <section class="relax" id="relax">
+    <section class="relax" id="relax">
       <div class="container">
         <h2 class="relax__title title">У нас есть все для классного отдыха с друзьями!</h2>
         <ul class="relax__list">
@@ -107,7 +107,7 @@
       </div>
     </section>
 
-    <section class="hall">
+    <section class="hall" id="hall">
       <div class="container">
         <h2 class="hall__title title">Наши залы</h2>
         <ul class="hall__list">
@@ -135,21 +135,21 @@
       </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id="form">
       <div class="container">
         <h2 class="section-form__title title">Забронировать зал просто</h2>
         <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <fieldset class="hall">
+          <fieldset class="hall-form">
             <legend class="form__legend-title">Выбери зал</legend>
-            <div class="form__item-wrapper hall__wrapper">
-              <input class="hall__input" id="vibes" type="radio" name="gym" value="vibes">
-              <label class="hall__label" for="vibes">80's vibes</label>
-              <input class="hall__input" id="starwars" type="radio" name="gym" value="star_wars">
-              <label class="hall__label" for="starwars">star wars</label>
-              <input class="hall__input" id="wildwest" type="radio" name="gym" value="wild_west">
-              <label class="hall__label" for="wildwest">wild west</label>
-              <input class="hall__input" id="neonstyle" type="radio" name="gym" value="neon_style">
-              <label class="hall__label" for="neonstyle">neon style</label>
+            <div class="form__item-wrapper hall-form__wrapper">
+              <input class="hall-form__input" id="vibes" type="radio" name="gym" value="vibes">
+              <label class="hall-form__label" for="vibes">80's vibes</label>
+              <input class="hall-form__input" id="starwars" type="radio" name="gym" value="star_wars">
+              <label class="hall-form__label" for="starwars">star wars</label>
+              <input class="hall-form__input" id="wildwest" type="radio" name="gym" value="wild_west">
+              <label class="hall-form__label" for="wildwest">wild west</label>
+              <input class="hall-form__input" id="neonstyle" type="radio" name="gym" value="neon_style">
+              <label class="hall-form__label" for="neonstyle">neon style</label>
             </div>
           </fieldset>
           <fieldset class="fun">
@@ -230,7 +230,7 @@
 
     
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title">О нас</h2>
         <div class="about__wrapper">
@@ -270,7 +270,7 @@
     </section>
 
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container reviews__container">
         <h2 class="reviews__title title">Отзывы посетителей</h2>
         <ul class="reviews__list">
@@ -331,7 +331,7 @@
     </section> 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <h2 class="contacts-title title">Контакты</h2>
       <div class="footer__wrapper">

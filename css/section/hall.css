@@ -54,15 +54,19 @@
 
 @media (max-width: 1360px) {
   .hall {
-    padding-bottom: 57px;
+    padding-bottom: 68px;
+  }
+
+  h2.hall__title {
+    margin-bottom: 32px;
   }
 
   .hall__item {
-    flex-basis: 430px;
+    flex-basis: 441px;
   }
 
   .hall__item-text {
-    padding: 73px 0;
+    padding: 74px 0;
     font-size: 50px;
     line-height: 60px;
   }
@@ -70,7 +74,7 @@
 
 @media (max-width: 1000px) {
   .hall {
-    padding-bottom: 100px;
+    padding-bottom: 56px;
   }
 
   .hall__list {
@@ -78,14 +82,14 @@
   }
 
   .hall__item {
-    flex-basis: 305px;
+    flex-basis: 334px;
   }
 
   .hall__item-text {
     max-width: 121px;
     font-size: 40px;
     line-height: 50px;
-    padding: 43px 0 46px;
+    padding: 64px 0 46px;
   }
 }
 

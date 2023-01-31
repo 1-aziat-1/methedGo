@@ -32,7 +32,7 @@ h2.room__title {
 
 @media (max-width: 1360px) {
   .room {
-    padding: 10px 0 30px;
+    padding: 20px 0 30px;
   }
   .room__list {
     gap: 20px;
@@ -65,8 +65,12 @@ h2.room__title {
 
 @media (max-width: 700px) {
   .room {
-    padding-bottom: 30px;
+    padding: 15px 0 30px;
   }
+
+  h2.room__title {
+    margin-bottom: 15px;
+  } 
 
   .room__list {
     flex-direction: column;

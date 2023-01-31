@@ -13,26 +13,27 @@
   margin-bottom: 40px;
 }
 
-.hall__wrapper {
+.hall-form__wrapper {
   display: flex;
   column-gap: 60px;
 }
 
-.hall__input {
+.hall-form__input {
   display: none;
 }
 
-.hall__label {
+.hall-form__label {
   width: 250px;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
-  padding: 8px 0;
+  padding: 6px 0;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 60px;
+  border: 3px solid #fff;
 }
 
 
@@ -152,6 +153,21 @@
   border: none;
 }
 
+.hall-form__input:checked + .hall-form__label {
+  background-color: #CD06FF;
+  color: #fff;
+}
+
+.hall-form__label:hover {
+  background-color: #EADEED;
+  border-color: #640AA3;
+}
+
+.hall-form__label:active {
+  background-color:#6C0287;
+  border-color: #fff;
+}
+
 .form input:focus {
   border: 2px solid #CD06FF;
   outline-color: #CD06FF;
@@ -160,7 +176,7 @@
 
 @media (max-width: 1360px) {
   .section-form {
-    padding: 63px 0 60px;
+    padding: 63px 0 57px;
   }
 
   h2.section-form__title {
@@ -171,7 +187,7 @@
     margin-bottom: 26px;
   }
   
-  .hall__label {
+  .hall-form__label {
     width: 180px;
     font-size: 20px;
     line-height: 28px;
@@ -207,7 +223,7 @@
     padding: 50px 0 54px;
   }
 
-  .hall__label {
+  .hall-form__label {
     width: 150px;
     font-size: 16px;
     line-height: 20px;
@@ -218,7 +234,7 @@
     margin-bottom: 30px;
   }
   
-  .hall__wrapper {
+  .hall-form__wrapper {
     justify-content: space-between;
     column-gap: 0;
   }
@@ -298,19 +314,19 @@
     margin-bottom: 15px;
   }
 
-  .hall__wrapper {
+  .hall-form__wrapper {
     flex-wrap: wrap;
     gap: 14px 20px;
     margin-bottom: 30px;
     justify-content: center;
   }
 
-  .hall__label {
+  .hall-form__label {
     width: 130px;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 23px;
     margin-bottom: 0;
-    padding: 1px 20px;
+    padding: 1px 15px;
     border-radius: 4px;
   }
 

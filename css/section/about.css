@@ -42,7 +42,7 @@
 }
 
 .about__text:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .about-blockquote {
@@ -120,7 +120,7 @@
   }
 
   .about__text-wrapper {
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   }
 
   .about__context-wrapper {

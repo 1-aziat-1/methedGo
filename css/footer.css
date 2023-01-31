@@ -11,7 +11,7 @@ footer {
 }
 
 .contacts-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .contacts-text {
@@ -34,14 +34,15 @@ footer {
 
 .contacts-list {
   display: flex;
-  gap: 25px;
+  gap: 27px;
+  padding-left: 7px;
 }
 
 .contacts-item {
   border: 1px solid inherit;
 }
 
-.contacts-text:not(:last-child) {
+.text-phone {
   margin-bottom: 10px;
 }
 
@@ -121,9 +122,17 @@ footer {
     padding-left: 40px;
   }
 
+  .contacts-list {
+    padding-left: 0;
+  } 
+
   .contacts-item {
     width: 40px;
     height: 40px;
+  }
+
+  .text-phone {
+    margin-bottom: 4px;
   }
 
   .footer__wrapper {
@@ -136,8 +145,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 33px;
+    row-gap: 30px;
     margin-bottom: 72px;
+  }
+
+  h2.contacts-title {
+    margin-bottom: 30px;
   }
 
   .contacts-wrapper {
@@ -187,6 +200,7 @@ footer {
     margin-bottom: 60px;
     align-items: center;
     justify-content: center;
+    row-gap: 37px;
   }
 
   h2.contacts-title {
