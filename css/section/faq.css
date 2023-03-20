@@ -1,16 +1,45 @@
 .faq__list {
   padding: 0;
 }
+
 .faq__item {
   position: relative;
   list-style-type: none;
   background-color: #fff;
   color: #1c1a1a;
-  padding: 30px 70px;
-}
-.faq__item-text {
   font-weight: 700;
   font-size: 24px;
+}
+
+.faq__item-title {
+  padding: 30px 70px;
+  position: relative;
+}
+
+.faq__item-btn {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-weight: bold;
+  text-align: left;
+}
+
+.faq__item-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height .4s ease-in-out;
+  background-color: #fff;
+  color: #1c1a1a;
+  font-weight: 400;
+}
+
+.faq_active .faq__item-wrapper {
+  height: auto;
+}
+
+.faq__item-text {
+  padding: 60px 70px 100px;
 }
 
 .faq__item:not(:last-child){
@@ -22,41 +51,82 @@
   background-color: var(--color-bg--content,#440F51);
 }
 
-.faq__item::after {
-  content: " ";
+.faq__item-img{
   position: absolute;
-  top: 25px;
-  right: 70px;
+  top: 50%;
+  right: 5%;
   width: 46px;
   height: 46px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  border-radius: 50%;
+  border: 1px solid;
+  transform: translateY(-50%);
 }
 
-.faq__item:nth-child(1n)::after {
-  background-image: url("../../img/svg/plus-purple.svg");
+.faq__item-img::before,
+.faq__item-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  display: block;
+  width: 20px;
+  height: 1px;
 }
 
-.faq__item:nth-child(2n)::after {
-  background-image: url("../../img/svg/plus-white.svg");
+.faq__item-img::before {
+  transform: translateX(50%);
 }
 
-.faq__item:nth-child(1n):hover::after{
-  background-image: url("../../img/svg/plus-purple-hover.svg");
+.faq__item-img::after {
+  transform: translateX(50%) rotate(90deg);
 }
 
-.faq__item:nth-child(1n):active::after {
-  background-image: url("../../img/svg/plus-purple-active.svg");
+.faq__item:nth-child(1n) .faq__item-img {
+  border-color:  #6C0287;
 }
 
-.faq__item:nth-child(2n):hover::after {
-  background-image: url("../../img/svg/plus-white-hover.svg");
+.faq__item:nth-child(2n) .faq__item-img {
+  border-color: #fff;
 }
 
-.faq__item:nth-child(2n):active::after {
-  background-image: url("../../img/svg/plus-white-active.svg");
+.faq__item:nth-child(1n) .faq__item-img::after,
+.faq__item:nth-child(1n) .faq__item-img::before {
+  background-color: #6C0287;
 }
+
+.faq__item:nth-child(2n) .faq__item-img::after,
+.faq__item:nth-child(2n) .faq__item-img::before {
+  background-color: #fff;
+}
+
+.faq__item:nth-child(1n):hover .faq__item-img {
+  background-color: #6C0287;
+}
+
+.faq__item:nth-child(2n):hover .faq__item-img {
+  background-color: #fff;
+}
+
+.faq__item:nth-child(1n):hover .faq__item-img::after,
+.faq__item:nth-child(1n):hover .faq__item-img::before {
+  background-color: #fff;
+  
+}
+
+.faq__item:nth-child(2n):hover .faq__item-img::after,
+.faq__item:nth-child(2n):hover .faq__item-img::before {
+  background-color: #6C0287;
+}
+
+.faq__item-title:active .faq__item-img::after {
+  display: none;
+}
+
+
+.faq__active .faq__item-img::after {
+  display: none;
+}
+
 
 @media (max-width: 1360px) {
   .faq {
@@ -68,10 +138,6 @@
   }
 
   .faq__item {
-    padding: 22px 29px;
-  }
-
-  .faq__item-text {
     font-size: 20px;
     line-height: 24px;
   }
@@ -80,20 +146,24 @@
     margin-bottom: 17px;
   }
 
-  .faq__item::after {
-    top: 11px;
-    right: 20px;
-  }
 }
 
 @media (max-width: 1000px) {
   .faq__item {
-    padding-left: 53px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
-  .faq__item::after {
-    right: 65px;
+  .faq__item-btn {
+    font-size: 18px;
+    line-height: 24px;
   }
+
+  .faq__item-title,
+  .faq__item-text {
+    padding: 20px 25px;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -101,26 +171,28 @@
     margin-bottom: 15px;
   }
 
-  .faq__item {
-    display: flex;
-    align-items: center;
-    height: 46px;
-    padding: 7px 43px 7px 10px;
+  .faq__item-btn {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .faq__item-text {
     font-size: 12px;
     line-height: 16px;
+    padding: 5px 25px 20px;
   }
 
   .faq__item:not(:last-child) {
     margin-bottom: 10px;
   }
 
-  .faq__item::after {
-    width: 30px;
-    height: 30px;
-    right: 13px;
-    top: 7px;
+  .faq__item-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .faq__item-img::before,
+  .faq__item-img::after {
+    width: 10px;
   }
 }
