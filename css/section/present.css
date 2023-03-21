@@ -273,6 +273,8 @@
 @media (max-width: 700px) {
   .present {
     padding-bottom: 30px;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .present__title {

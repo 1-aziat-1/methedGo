@@ -16,79 +16,77 @@
   display: none;
   background-color: inherit;
   border: inherit;
-  flex-direction: column;
-  row-gap: 7px;
-  padding: 5px;
-}
-
-.menu:hover span {
-  background-color: var( --color-content, #CD06FF);
-  transition: background-color .2s;
+  position: relative;
+  width: 60px;
+  height: 60px;
 }
 
 .menu:focus {
-  border: 2px solid var( --color-content, #CD06FF);
-  outline-color: var( --color-content, #CD06FF);
-  transition: border .2s;
+  border: 1px solid #CD06FF;
 }
 
-.menu__icon {
-  width: 54px;
+.menu span {
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 2px;
+  left: 2px;
   height: 5px;
   background-color: #6C0287;
   border-radius: 2px;
 }
 
-.menu__icon.short {
-  width: 31px;
-}
-
-/* dropdown__menu{
-  background-color: rgba(0, 0, 0, 0.6);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0px;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
-  width: 100%;
-  z-index: 10;
-} */
-
-.dropdown__menu.is-visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.dropdown__menu {
+.menu span:before,
+.menu span:after {
+  content: '';
+  display: block;
   position: absolute;
   width: 100%;
-  top: 88px;
-  padding: 60px 0;
-  transition-property: top;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  background-color: #1B1A1B;
-  z-index: 10;
+  height: 5px;
+  left: 0;
+  background-color: #6C0287;
+  border-radius: 2px;
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0;
 }
 
-.dropdown__menu-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 40px;
+.menu span:before {
+  top: -14px;
 }
 
-.dropdown__menu-list li a{
-  font-size: 22px;
-  line-height: 22px;
-  text-transform: uppercase;
+.menu span:after {
+  width: 31px;
+  bottom: -14px;
 }
 
+.menu span:hover,
+.menu span:hover:before,
+.menu span:hover:after {
+  background-color: #CD06FF;
+}
+
+.menu.is-active span:before {
+  top: 0;
+  transform: rotate(45deg);
+  transition-property: top, transform;
+}
+
+.menu.is-active span{
+  background: none;
+}
+
+.menu.is-active span:after {
+  bottom: 0;
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-property: bottom, transform;
+}
+
+
+.menu.menu.is-active span:hover:before,
+.menu.menu.is-active span:hover:after {
+  transition-delay: 0s, 0.3s;
+}
 
 .header__logo {
   width: 120px;
@@ -165,7 +163,7 @@
   }
 
   .menu {
-    display: flex;
+    display: block;
   }
 }
 
@@ -179,7 +177,7 @@
   }
 
   .menu__icon {
-    width: 39px;
+    width: 40px;
   }
 
   .menu__icon.short {

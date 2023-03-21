@@ -17,10 +17,8 @@
   <header class="header">
     <div class="container header__container">
 
-      <button class="header__menu-min menu" type="menu">
-        <span class="menu__icon"></span>
-        <span class="menu__icon"></span>
-        <span class="menu__icon short"></span>
+      <button class="header__menu menu" type="menu">
+        <span></span>
       </button>
 
       <img class="header__logo" src="img/png/logo-dark.png" alt="лого сайта">
@@ -46,26 +44,6 @@
       </nav>
 
       <button class="header__buy" type="button">заказать звонок</button>
-
-      <nav class="dropdown__menu">
-        <ul class="dropdown__menu-list">
-          <li>
-            <a href="#hall">залы</a>
-          </li>
-          <li>
-            <a href="#about">о нас</a>
-          </li>
-          <li>
-            <a href="#form">бронь</a>
-          </li>
-          <li>
-            <a href="#reviews">отзывы</a>
-          </li>
-          <li>
-            <a href="#footer">контакты</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </header>
 
@@ -449,7 +427,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
+  <div class="form__overlay modal">
     <div class="modal__container">
       <button class="modal__close close" type="button"></button>
       <div class="modal__title">Заказать звонок</div>
@@ -465,6 +443,28 @@
         <button class="modal__btn" type="submit" id="modal">Позвонить мне</button>
       </form>
     </div>
+  </div>
+  <div class="dropdown__menu">
+    <nav class="dropdown__menu-container">
+      <ul class="dropdown__menu-list">
+        <li>
+          <a href="#hall">залы</a>
+        </li>
+        <li>
+          <a href="#about">о нас</a>
+        </li>
+        <li>
+          <a href="#form">бронь</a>
+        </li>
+        <li>
+          <a href="#reviews">отзывы</a>
+        </li>
+        <li>
+          <a href="#footer">контакты</a>
+        </li>
+      </ul>
+      <button class="modal__btn dropdown__menu-btn" type="submit" id="modal">Позвонить мне</button>
+    </nav>
   </div>
 </body>
 
