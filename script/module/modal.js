@@ -3,10 +3,29 @@ const formOverlay = document.querySelector('.form__overlay');
 const menuBtn = document.querySelector('.menu');
 const menu = document.querySelector('.dropdown__menu');
 const modalBtn = menu.querySelector('.modal__btn');
-const menuItems = menu.querySelectorAll('.dropdown__menu-list>li')
+const menuItems = menu.querySelectorAll('.dropdown__menu-list>li');
+const menuNav = menu.querySelector('nav');
+
+let top = 0,
+durationFly = 1500,
+startTime = NaN;
+
+const menuOpenAnimate = (timestamp) => {
+  startTime ||= timestamp;
+  const progress = ((timestamp - startTime) / durationFly).toFixed(3);
+  console.log(progress);
+  top = menuNav.clientHeight * progress;
+  menuNav.style.transform = `translateY(${top}px)`;
+  if (progress < 1) {
+    requestAnimationFrame(menuOpenAnimate);
+  } else {
+    startTime = NaN;
+  }
+};
 
 const menuControl = () => {
   const menuOpen = () => {
+    requestAnimationFrame(menuOpenAnimate);
     menu.classList.add('is-visible');
     menuBtn.classList.add('is-active');
   };
@@ -26,8 +45,9 @@ const menuControl = () => {
       menuClose();
     }
   });
-  
 };
+menuControl();
+
 
 const modalControl = () => {
   const modalOpen = () => {
@@ -57,4 +77,3 @@ const modalControl = () => {
 
 
 modalControl();
-menuControl();

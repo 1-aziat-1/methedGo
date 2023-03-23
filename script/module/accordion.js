@@ -1,5 +1,5 @@
 const items = document.querySelectorAll('.faq__item');
-const itemsBtn = document.querySelectorAll('.faq__item-btn');
+const itemsBtn = document.querySelectorAll('.faq__item-title');
 const itemsWrapper = document.querySelectorAll('.faq__item-wrapper');
 const itemsImg = document.querySelectorAll('.faq__item::after');
 console.log(itemsImg);

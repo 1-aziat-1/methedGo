@@ -59,9 +59,9 @@
   bottom: -14px;
 }
 
-.menu span:hover,
-.menu span:hover:before,
-.menu span:hover:after {
+.menu:hover span,
+.menu:hover span:before,
+.menu:hover span:after {
   background-color: #CD06FF;
 }
 

@@ -107,16 +107,17 @@
 
 .dropdown__menu {
   position: absolute;
-  top: 0;
+  top: 80px;
 }
 
 .dropdown__menu.is-visible {
   opacity: 1;
   visibility: visible;
-  top: 88px;
 }
 
 .dropdown__menu-container {
+  position: relative;
+  top: -502px;
   width: 100%;
   padding: 60px 0;
   background-color: #1B1A1B;
